@@ -39,5 +39,17 @@
   },
   "dependencies": {
     "remove": "^0.1.5"
-  }
+  },
+  "description": "Eleventy Duo is a minimal and beautiful Eleventy theme for personal blogs.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinkakun/eleventy-duo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yinkakun/eleventy-duo/issues"
+  },
+  "homepage": "https://github.com/yinkakun/eleventy-duo#readme"
 }
