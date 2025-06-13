@@ -30,7 +30,7 @@
   cursor: pointer;
   position: absolute;
   bottom: 2rem;
-  border: 2px solid rgb(0, 0, 0, 0.4);
+  border: 2px solid var(--color-30);
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
@@ -42,6 +42,5 @@
 
 .hero__skip-link svg {
   transition: opacity 0.2s ease-in-out;
-  stroke: rgb(0, 0, 0, 0.4);
-  /* color: rgb(41, 41, 41); */
+  stroke: var(--color-30);
 }

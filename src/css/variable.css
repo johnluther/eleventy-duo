@@ -1,8 +1,39 @@
 :root {
+  /* Light theme (default) */
   --accent: #0074d9;
   --background: #fffffe;
   --color: rgb(41, 41, 41);
-  --color-80: rgba(41, 41, 41, .8);
-  --color-30: rgba(41, 41, 41, .3);
-  --color-10: rgba(41, 41, 41, .1);
+  --color-80: rgba(41, 41, 41, 0.8);
+  --color-30: rgba(41, 41, 41, 0.3);
+  --color-10: rgba(41, 41, 41, 0.1);
+  --header-bg: rgba(255, 255, 255, 0.8);
+  --card-bg: #ffffff;
+  --border-color: #eaeaea;
+  --code-bg: #f5f5f5;
+  --code-color: #333;
+  --blockquote-bg: #f9f9f9;
+  --blockquote-border: #ddd;
+  --pre-bg: #2d2d2d;
+  --pre-color: #f8f8f2;
+  
+  /* Animation */
+  --transition: 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --accent: #7db8ff;
+  --background: #1a1a1a;
+  --color: #e0e0e0;
+  --color-80: rgba(224, 224, 224, 0.8);
+  --color-30: rgba(224, 224, 224, 0.3);
+  --color-10: rgba(224, 224, 224, 0.1);
+  --header-bg: rgba(26, 26, 26, 0.8);
+  --card-bg: #2d2d2d;
+  --border-color: #444;
+  --code-bg: #333;
+  --code-color: #f8f8f2;
+  --blockquote-bg: #2a2a2a;
+  --blockquote-border: #444;
+  --pre-bg: #1e1e1e;
+  --pre-color: #d4d4d4;
 }

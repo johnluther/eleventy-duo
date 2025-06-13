@@ -1,0 +1,78 @@
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+    <mask class="moon" id="moon-mask">
+      <rect x="0" y="0" width="100%" height="100%" fill="white" />
+      <circle cx="17" cy="10" r="8" fill="black" />
+    </mask>
+    <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+    <g class="sun-beams" stroke="currentColor">
+      <line x1="12" y1="1" x2="12" y2="3" />
+      <line x1="12" y1="21" x2="12" y2="23" />
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+      <line x1="1" y1="12" x2="3" y2="12" />
+      <line x1="21" y1="12" x2="23" y2="12" />
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+    </g>
+  </svg>
+</button>
+
+<style>
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--color);
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition);
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+}
+
+.sun-and-moon {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: all 0.3s ease;
+}
+
+.sun {
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.sun-beams {
+  stroke-width: 1.5;
+  transform-origin: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+[data-theme="dark"] .sun {
+  transform: scale(1.5);
+}
+
+[data-theme="dark"] .sun-beams {
+  opacity: 0;
+  transform: rotate(-25deg);
+}
+
+[data-theme="dark"] .moon circle {
+  transform: translateX(-7px);
+}
+
+@supports (cx: 1) {
+  [data-theme="dark"] .moon circle {
+    transform: translateX(0);
+    cx: 17;
+  }
+}
+</style>
